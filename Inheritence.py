@@ -2,6 +2,9 @@ class Book():
     def __init__(self, name, page):
         self.name = name
         self.page = page
+    def open(self):
+        answer = f'open the last page ({self.page})'
+        return answer
 
 
 class Darsi(Book):
@@ -13,4 +16,4 @@ class Darsi(Book):
 
 d = Darsi("programmer", "400_page", 3, "Computer")
 
-print(d.name)
+print(d.open())
